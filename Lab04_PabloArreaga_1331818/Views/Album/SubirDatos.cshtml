@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "SubirDatos";
+}
+
+<h2>SubirDatos</h2>
+<body>
+	@using (Html.BeginForm("SubirDatos", "Album", FormMethod.Post, new { enctype = "multipart/form-data" }))
+	{
+		<input type="file" name="PostAlbum" />
+		<input type="submit" value="Importar" />
+	}
+</body>
