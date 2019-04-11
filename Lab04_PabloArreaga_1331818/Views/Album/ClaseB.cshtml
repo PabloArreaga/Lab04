@@ -1,0 +1,21 @@
+﻿@using Lab04_PabloArreaga_1331818.Models
+@model BuscarModel
+@{
+	ViewBag.Title = "ClaseB";
+}
+
+<h2>Consultar estado de estampas de una clase</h2>
+<p>Ingresar por ejemplo "Chelsea" y saldran los numero de las estampas que no se tengan</p>
+<p>Hace consultas por clase, equipo, tipo, etc. (Segun nuestro album)</p>
+<p> </p>
+
+@using (Html.BeginForm("ClaseB", "Album", FormMethod.Post))
+{
+	@Html.TextBoxFor(model => model.Iden)
+	@Html.ValidationMessageFor(model => model.Iden)
+	<button type="submit">Buscar</button>
+}
+<div>
+	<h4>@Html.ActionLink("Regresar", "Menu")</h4>
+</div>
+

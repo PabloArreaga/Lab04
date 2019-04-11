@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Lab04_PabloArreaga_1331818.Models.MostrarModel>
+@{
+	ViewBag.Title = "Estado";
+}
+
+<h2>Estado</h2>
+
+<table class="table">
+	<tr>
+		<th>
+			@Html.DisplayNameFor(model => model.Clase)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.Faltan)
+		</th>
+		<th></th>
+	</tr>
+
+	@foreach (var item in Model)
+	{
+		<tr>
+			<td>
+				@Html.DisplayFor(modelItem => item.Clase)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.Faltan)
+			</td>
+		</tr>
+	}
+
+</table>
+<div>
+	<h4>@Html.ActionLink("Regresar", "Menu")</h4>
+</div>
+

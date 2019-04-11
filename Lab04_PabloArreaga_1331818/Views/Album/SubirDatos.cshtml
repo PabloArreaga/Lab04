@@ -1,10 +1,13 @@
 ﻿
 @{
-    ViewBag.Title = "SubirDatos";
+    ViewBag.Title = "Subir Datos";
 }
 
 <h2>SubirDatos</h2>
 <body>
+	<p>Seleccione el documento que empieza con "Datos" el cual esta ubicado en la carpeta llamada "Ejemplo" ubicada en este proyecto</p>
+	<p>Puede ingresar cualquier otro documento, mientras respete la nomenclatura ya establecida (para ello revisar el archivo antes mencionado)</p>
+	<p> </p>
 	@using (Html.BeginForm("SubirDatos", "Album", FormMethod.Post, new { enctype = "multipart/form-data" }))
 	{
 		<input type="file" name="PostAlbum" />

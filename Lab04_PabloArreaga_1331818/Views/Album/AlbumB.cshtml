@@ -1,0 +1,22 @@
+﻿@model Lab04_PabloArreaga_1331818.Models.BuscarModel
+
+@{
+	ViewBag.Title = "AlbumB";
+}
+
+<h2>AlbumB</h2>
+
+<h2>Consultar estdo de una estampa en especifico</h2>
+<p>Ingresar por ejemplo "Copa" y saldra "true" "false" (segun el estado que tenga)</p>
+<p>Hace consultas por estampa (Considere el uso de Mayusculas)</p>
+<p> </p>
+
+@using (Html.BeginForm("AlbumB", "Album", FormMethod.Post))
+{
+	@Html.TextBoxFor(model => model.Iden)
+	@Html.ValidationMessageFor(model => model.Iden)
+	<button type="submit">Buscar</button>
+}
+	<div>
+		<h4>@Html.ActionLink("Regresar", "Menu")</h4>
+	</div>

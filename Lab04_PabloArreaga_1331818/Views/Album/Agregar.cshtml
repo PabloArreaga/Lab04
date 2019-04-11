@@ -1,0 +1,24 @@
+﻿@model Lab04_PabloArreaga_1331818.Models.BuscarModel
+
+@{
+	ViewBag.Title = "Agregar";
+}
+
+<h2>Agregar Estampa</h2>
+
+@using (Html.BeginForm("Agregar", "Album", FormMethod.Post))
+{
+	<h>
+		Nombre
+		@Html.TextBoxFor(model => model.Iden)
+		@Html.ValidationMessageFor(model => model.Iden)
+	</h>
+	<h>
+		Numero
+		@Html.TextBoxFor(model => model.NoEstampa)
+		@Html.ValidationMessageFor(model => model.NoEstampa)
+	</h>
+
+	<button type="submit">Buscar</button>
+}
+

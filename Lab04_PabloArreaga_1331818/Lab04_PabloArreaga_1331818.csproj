@@ -132,6 +132,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\Data.cs" />
+    <Compile Include="Models\AlbumModel.cs" />
+    <Compile Include="Models\BuscarModel.cs" />
+    <Compile Include="Models\MostrarEquiModel.cs" />
+    <Compile Include="Models\MostrarModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -171,10 +175,16 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Album\SubirDatos.cshtml" />
+    <Content Include="Views\Album\Menu.cshtml" />
+    <Content Include="Views\Album\Agregar.cshtml" />
+    <Content Include="Views\Album\ClaseB.cshtml" />
+    <Content Include="Views\Album\AlbumB.cshtml" />
+    <Content Include="Views\Album\Estado.cshtml" />
+    <Content Include="Views\Album\GridMostrar.cshtml" />
+    <Content Include="Views\Album\SubirDetalle.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
